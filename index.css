@@ -1,0 +1,126 @@
+body {
+  background: linear-gradient(to right, #ff68c2, #ffa38d, #ffdc5b);
+}
+#navbarContainer {
+  background-color: white;
+  display: flex;
+}
+.navbarLeft {
+  width: 20%;
+}
+.navbarCenter {
+  display: flex;
+
+  width: 60%;
+  justify-content: space-around;
+}
+.navbarRight {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+.navbarRight :nth-child(1) {
+  margin-left: 70%;
+}
+.navbarRight img {
+  display: block;
+  margin-left: 8px;
+}
+ /* #absoluteElement{
+    position: absolute;
+    top: 35%;
+    left: 18%;
+    width: 250px;
+    height: 150px;
+    border: 2px solid black;
+    background-color: #ffa38d;
+    opacity: .5;
+ } */
+ 
+
+#webBody>div{
+    width: 100%;
+}
+#webBody>div>img{
+    width: 100%;
+    height: 500px;
+}
+#bodyContentSecond > div > div > p {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#bodyContentSecond {
+  width: 100%;
+  /* height: 500px; */
+}
+#bodyContentSecond > p {
+  letter-spacing: 0.5rem;
+  color: aliceblue;
+  font-size: xx-large;
+  font-weight: 1000;
+  text-align: center;
+}
+#temp {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  justify-content: space-between;
+  width: 70%;
+
+  margin: auto;
+}
+#bodyContentSecond > div > div > h3 {
+  text-align: center;
+}
+#bodyContentSecond > div > div > img {
+  border-radius: 0% 31% 0% 0%;
+  width: 80%;
+  height: 55%;
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+}
+#temp div {
+  border-radius: 0% 31% 0% 31%;
+  background-color: white;
+  height: 350px;
+}
+button {
+  background-color: #ffcab9;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 30px;
+}
+
+@media screen and (max-width: 950px) {
+  .navbarCenter {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    width: 90%;
+  }
+  .navbarLeft {
+    display: none;
+  }
+  .navbarRight :nth-child(1) {
+    margin-left: 0%;
+    margin-bottom: 10px;
+  }
+  .navbarRight {
+    flex-flow: column;
+    /* margin: 5px; */
+    line-height: 75px;
+    width: 10%;
+    justify-content: center;
+  }
+  #temp {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-flow: row;
+    row-gap: 15px;
+  }
+}
